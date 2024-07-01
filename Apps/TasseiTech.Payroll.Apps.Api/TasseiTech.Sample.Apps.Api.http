@@ -1,0 +1,6 @@
+@TasseiTech.Payroll.Apps.Api_HostAddress = http://localhost:5022
+
+GET {{TasseiTech.Payroll.Apps.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
