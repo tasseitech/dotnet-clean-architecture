@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Configuration\**" />
+    <Compile Remove="EventHandlers\**" />
+    <Compile Remove="Extensions\**" />
+    <Compile Remove="ThirdPartyDTOs\**" />
+    <Compile Remove="Validators\**" />
+    <EmbeddedResource Remove="Configuration\**" />
+    <EmbeddedResource Remove="EventHandlers\**" />
+    <EmbeddedResource Remove="Extensions\**" />
+    <EmbeddedResource Remove="ThirdPartyDTOs\**" />
+    <EmbeddedResource Remove="Validators\**" />
+    <None Remove="Configuration\**" />
+    <None Remove="EventHandlers\**" />
+    <None Remove="Extensions\**" />
+    <None Remove="ThirdPartyDTOs\**" />
+    <None Remove="Validators\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net" Version="0.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TasseiTech.Payroll.Core.Domain\TasseiTech.Sample.Core.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

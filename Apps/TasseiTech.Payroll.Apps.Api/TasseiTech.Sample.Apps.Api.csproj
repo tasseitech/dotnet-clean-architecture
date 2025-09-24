@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <UserSecretsId>449e8375-d7b3-495c-a58f-8262c5860d1f</UserSecretsId>
+	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.3" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
+    <PackageReference Include="Serilog.Sinks.Datadog.Logs" Version="0.5.2" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\TasseiTech.Payroll.Core.Services\TasseiTech.Sample.Core.Services.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\TasseiTech.Payroll.Infrastructure.Sql\TasseiTech.Sample.Infrastructure.Sql.csproj" />
+  </ItemGroup>
+
+</Project>
